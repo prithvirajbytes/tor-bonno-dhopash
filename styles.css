@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+
+html {
+	font-size: 3vw;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	font-family: 'Roboto', sans-serif;
+	background: rgba(0, 0, 0, 0.856);
+	background-image: url('images/sky1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 100% 100%;
+}
+
+body, h1, h3, ul, li, span, p {
+	margin: 0;
+	padding: 0;
+	color: #d1d1d1;
+	user-select: none;
+}
+
+body div ul li p {
+	margin: 0;
+	padding: 0;
+}
+#my-particles{
+	position:absolute;
+	width: 100vw;
+	height: 100vh;
+}
+
+.container {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	align-content: center;
+	justify-items: center;
+}
+
+.container .logo {
+	font-size: 1rem;
+	margin-bottom: 5vh;
+}
+
+.container .slogan {
+	font-size: 1.75rem;
+	font-weight: bold;
+}
+
+.container h3 {
+	font-size: 1rem;
+	font-weight: lighter;
+	margin-bottom: 1vh;
+}
+
+.container ul {
+	list-style: none;
+	margin-bottom: 2vh;
+}
+
+.countdown-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	justify-items: center;
+	align-items: center;
+}
+
+.container ul li {
+	width: 10vw;
+	height: 13vw;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	margin: 0px 1vw;
+}
+
+.container ul li .counter {
+	font-size: 1.75rem;
+	font-weight: bold;
+	padding-top: 1vw;
+}
+
+.container ul li .counter-description {
+	font-size: 0.6rem;
+	margin-top: -3vw;
+}
+
+.container .more-info input {
+	box-sizing: border-box;
+	padding: 1vw;
+	font-size: 0.8rem;
+	border: 1px solid grey;
+	float: left;
+	width: 30vw;
+	background: rgba(255, 255, 255, 0.281);
+}
+
+.container .more-info input::-webkit-input-placeholder { /* Edge */
+	color: #d1d1d1;
+}
+
+.container .more-info input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: #d1d1d1;
+}
+
+.container .more-info input::placeholder {
+	color: #d1d1d1;
+}
+
+.container .more-info input:focus {
+	outline: none;
+	border-top: 1px solid rgba(255, 145, 0, 0.904);
+	border-left: 1px solid rgba(255, 145, 0, 0.904);
+	border-bottom: 1px solid rgba(255, 145, 0, 0.904);
+}
+
+.container .more-info input:focus ~ button {
+	border-top: 1px solid rgba(255, 145, 0, 0.904);
+	border-right: 1px solid rgba(255, 145, 0, 0.904);
+	border-bottom: 1px solid rgba(255, 145, 0, 0.904);
+}
+
+.container .more-info button {
+	float: left;
+	width: 22vw;
+	padding: 0.33rem;
+	font-size: 0.8rem;
+	background: #2196F3;
+	color: #d1d1d1;
+	border: 1px solid grey;
+	border-left: none; /* Prevent double borders */
+	cursor: pointer;
+	animation: background 0.2s;
+}
+
+.container .more-info button:hover {
+	background: rgb(25, 112, 184);
+}
+.container .more-info::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/* switch button */
+.particles-switch {
+	position: absolute; width: 65px;
+	right: 0;
+	top: 0;
+	margin: 5px;
+	-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.particles-switch-checkbox {
+	display: none;
+}
+.particles-switch-label {
+	display: block; overflow: hidden; cursor: pointer;
+	border: 1px solid #999999; border-radius: 10px;
+}
+.particles-switch-inner {
+	display: block; width: 200%; margin-left: -100%;
+	transition: margin 0.3s ease-in 0s;
+}
+.particles-switch-inner:before, .particles-switch-inner:after {
+	display: block; float: left; width: 50%; height: 20px; padding: 0; line-height: 20px;
+	font-size: 12px; color: white; font-weight: bold;
+	box-sizing: border-box;
+}
+.particles-switch-inner:before {
+	content: "GRID";
+	padding-left: 6px;
+	background-color: #d1d1d1; color: #999999;
+}
+.particles-switch-inner:after {
+	content: "STARS";
+	padding-right: 6px;
+	background-color: #d1d1d1; color: #999999;
+	text-align: right;
+}
+.particles-switch-switch {
+	display: block; width: 8px; margin: 6px;
+	background: #ebeaea;
+	position: absolute; top: 0; bottom: 0;
+	right: 44px;
+	border: 1px solid #999999; border-radius: 20px;
+	transition: all 0.3s ease-in 0s;
+}
+.particles-switch-checkbox:checked + .particles-switch-label .particles-switch-inner {
+	margin-left: 0;
+}
+.particles-switch-checkbox:checked + .particles-switch-label .particles-switch-switch {
+	right: 0px;
+}
