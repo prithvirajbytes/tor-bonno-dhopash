@@ -1,5 +1,5 @@
 //const referenceDate = new Date('Dec 26, 2021 10:00:00').getTime();
-const referenceDate = (new Date("Oct 06, 2024 5:00:00").getTime());
+const referenceDate = (new Date("Oct 04, 2024 12:00:00").getTime());
 
 const elDays = document.getElementById('days');
 const elHours = document.getElementById('hours');
